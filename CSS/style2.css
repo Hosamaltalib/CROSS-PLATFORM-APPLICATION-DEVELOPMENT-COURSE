@@ -1,0 +1,132 @@
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+
+:root {
+    /* Design Tokens - Colors */
+    --color-primary: #007bff;
+    --color-secondary: #004c99;
+    --color-accent: #00aaff;
+    --color-footer: #001f3f;
+    --color-text: #333333;
+    --color-muted: #666666;
+    --color-surface: #ffffff;
+    --color-bg-light: #f2f8ff;
+
+    /* Typography */
+    --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-heading: 'Segoe UI', sans-serif;
+
+    /* Spacing Values */
+    --space-sm: 0.5rem;
+    --space-md: 1.5rem;
+    --space-lg: 3.0rem;
+}
+
+/* CSS Reset Block */
+* {
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    font-size: 1.6rem; 
+    color: var(--color-text);
+    background-color: var(--color-surface);
+}
+
+/*Task 2:*/
+
+/* Typographic Scale */
+
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--color-secondary);
+    margin-bottom: var(--space-md); /* external spacing below headings  */
+    font-weight: 700;
+
+}
+
+
+
+p {
+
+    line-height: 1.6;
+    margin-bottom: var(--space-md); /* Margin: spacing between paragraphs  */
+    font-size: 1.6rem;
+
+}
+
+/* Landmarks Styling */
+
+header {
+    background: linear-gradient(90deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+    color: white;
+    padding: var(--space-lg); /* Padding: internal space for hero section  */
+    text-align: center;
+
+}
+
+
+
+nav {
+    background: linear-gradient(90deg, #ffffff 0%, #e9f1ff 100%);
+    padding: var(--space-md); /* Padding: internal spacing for navigation bar  */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+/* <a> Tag States Must have 4 distinct states */
+
+nav a {
+
+    text-decoration: none;
+    color: var(--color-secondary);
+    font-weight: 500;
+    margin-right: var(--space-md);
+    transition: all 0.3s ease;
+    border-radius: 0.5rem; /* Requirement: border-radius on nav links  */
+}
+
+nav a:link { color: var(--color-secondary); }
+nav a:visited { color: var(--color-muted); } /* Distinct visited state  */
+nav a:hover { color: var(--color-primary); } 
+nav a:active { color: var(--color-accent); } /* Distinct active state  */
+
+
+
+footer {
+    background-color: var(--color-footer);
+    color: white;
+    padding: var(--space-lg);
+    text-align: center;
+    margin-top: var(--space-lg); /* Margin: external separation from main content  */
+}
+
+
+
+/* Box Model Demonstration on Sections */
+section {
+    padding: var(--space-lg); 
+    border-bottom: 2px solid var(--color-bg-light); /* Border: defines the edge  */
+    margin: var(--space-md) 0; 
+    background-color: var(--color-surface);
+
+}
+
+
+
+#pricing, .highlight-section {
+    background-color: var(--color-bg-light);
+
+}
+
