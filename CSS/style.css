@@ -1,0 +1,44 @@
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap');
+
+:root {
+    /* Design Tokens - Colors */
+    --color-primary: #007bff;
+    --color-secondary: #004c99;
+    --color-accent: #00aaff;
+    --color-footer: #001f3f;
+    --color-text: #333333;
+    --color-muted: #666666;
+    --color-surface: #ffffff;
+    --color-bg-light: #f2f8ff;
+
+    /* Typography */
+    --font-body: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-heading: 'Segoe UI', sans-serif;
+
+    /* Spacing Values */
+    --space-sm: 0.5rem;
+    --space-md: 1.5rem;
+    --space-lg: 3.0rem;
+}
+
+/* CSS Reset Block */
+* {
+    box-sizing: border-box; 
+}
+
+html {
+    font-size: 62.5%; 
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-body);
+    font-size: 1.6rem; 
+    color: var(--color-text);
+    background-color: var(--color-surface);
+}
+
