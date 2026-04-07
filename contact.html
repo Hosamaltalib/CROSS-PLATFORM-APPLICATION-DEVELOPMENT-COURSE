@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me - Hosam</title>
+</head>
+<body>
+
+    <header>
+        <h1 style="color: navy; background-color: lightgray;">Contact Me</h1>
+    </header>
+
+    <nav>
+        <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+   <form action="#" method="post">
+   <fieldset style="border: 2px solid darkblue; padding: 15px;">
+  <legend><strong>Send me a message</strong></legend>
+
+                    <p>
+   <label for="fullname">Full Name:</label><br>
+  <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required maxlength="60" style="border: 1px solid rgb(21, 5, 162);">
+                    </p>
+
+ <p>
+  <label for="useremail">Email Address:</label><br>
+  <input type="email" id="useremail" name="useremail" required placeholder="name@example.com">
+                    </p>
+
+                    <p>
+ <label for="subject">Subject:</label><br>
+                        <select id="subject" name="subject">
+ <optgroup label="General">
+<option value="hello">Specialized consultation</option>
+  <option value="project">Project Inquiry</option>
+                            </optgroup>
+ <optgroup label="Academic">
+  <option value="study">Study Help</option>
+                            </optgroup>
+ </select>
+                    </p>
+
+                    <p>
+                        Preferred contact method:<br>
+   <input type="radio" id="remail" name="contact_pref" value="email"> <label for="remail">Email</label>
+  <input type="radio" id="rphone" name="contact_pref" value="phone"> <label for="rphone">Phone</label>
+                    </p>
+
+                    <p>
+                        Interests:<br>
+     <input type="checkbox" id="web" name="interest" value="web"> <label for="web">Web Development</label>
+  <input type="checkbox" id="ai" name="interest" value="ai"> <label for="ai">Artificial Intelligence</label>
+                    </p>
+
+                    <p>
+  <label for="stars">Rate my site (1-5):</label>
+   <input type="range" id="stars" name="stars" min="1" max="5">
+                    </p>
+
+                    <p>
+       <label for="msg">Your Message:</label><br>
+  <textarea id="msg" name="msg" rows="4" cols="30" style="background-color: ivory; font-size: 14px;"></textarea>
+                    </p>
+
+  <button type="submit" style="background-color: rgb(4, 74, 4); color: white; padding: 10px;">Send Now</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><small>&copy; 2026 Hossam - Form Task Completed </small></p>
+    </footer>
+
+</body>
+</html>
